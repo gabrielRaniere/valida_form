@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input , button{
+            width: 300px;
+        }
+        .error-text {
+            color: red;
+            font-size: small;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário de cadastro</h1>
+        <ul>
+            <li>Nenhum Campo pode está vazio</li>
+            <li>Usuário só pode conter letras e/ou números</li>
+            <li>Usuário poderá apenas ter entre 3 a 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+            <form action="#"  method="post">
+                <label for="text">Nome</label>
+                <input type="text" class="nome validar">
+                <label for="text">SobreNome</label>
+                <input type="text" class="sobrenome validar">
+                <label for="text">CPF</label>
+                <input type="text" class="cpf validar">
+                <label for="text">Usuário</label>
+                <input type="text" class="usuario validar">
+                <label for="text">Senha</label>
+                <input type="text" class="senha validar">
+                <label for="text">Repetir senha</label>
+                <input type="text" class="senha-repetir validar">
+                <button>Enviar form</button>
+            </form>
+        </ul>
+    </section>
+    <script src="index2.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
